@@ -1,0 +1,1000 @@
+ 1227  mkdir 徐祥昊 
+ 1228  ls
+ 1229  tar -xf exam.tar 
+ 1230  ls
+ 1231  cd exam/
+ 1232  ls
+ 1233  ./build.sh 
+ 1234  ./gematrix 
+ 1235  cd ..
+ 1236  ls
+ 1237  mkdir 徐祥昊 
+ 1238  mv exam* 徐祥昊 
+ 1239  ls
+ 1240  mkdir 范若雷 
+ 1241  ls
+ 1242  unzip exam.zip 
+ 1243  ls
+ 1244  cd exam/
+ 1245  ls
+ 1246  bash build.sh 
+ 1247  ./gematrix 
+ 1248  cd ..
+ 1249  ls
+ 1250  mv exam* 范若雷 
+ 1251  ls
+ 1252  mkdir 丁立权 
+ 1253  ls
+ 1254  unzip exam.zip 
+ 1255  ls
+ 1256  cd _rels/
+ 1257  ls
+ 1258  cd ..
+ 1259  ls
+ 1260  cd customXml/
+ 1261  ls
+ 1262  cd ..
+ 1263  cd docProps/
+ 1264  ls
+ 1265  cd ..
+ 1266  cd word/
+ 1267  ls
+ 1268  cd _rels/
+ 1269  ls
+ 1270  cd ..
+ 1271  cd theme/
+ 1272  ls
+ 1273  cd ../..
+ 1274  ls
+ 1275  rm '[Content_Types].xml' _rels word customXml docProps -rf
+ 1276  ls
+ 1277  rm exam.zip 
+ 1278  ls
+ 1279  mv exam.zip 丁立权 
+ 1280  cd 丁立权 
+ 1281  ls
+ 1282  unzip exam.zip 
+ 1283  ls
+ 1284  tree
+ 1285  cd ..
+ 1286  ls
+ 1287  mkdir 江郑 
+ 1288  ls
+ 1289  mv exam.zip 江郑/
+ 1290  ls
+ 1291  cd 江郑/
+ 1292  ls
+ 1293  unzip exam.zip 
+ 1294  ls
+ 1295  cd exam/
+ 1296  ls
+ 1297  bash build.sh 
+ 1298  ./gematrix 
+ 1299  sudo poweroff
+ 1300  cd Downloads/
+ 1301  ls
+ 1302  cd 王佳敏
+ 1303  ls
+ 1304  cd exam/
+ 1305  ls
+ 1306  ./gematrix 
+ 1307  cat matrix.c 
+ 1308  ls
+ 1309  time ./gematrix 
+ 1310  gdb ./gematrix 
+ 1311  ls
+ 1312  ./build.sh
+ 1313  chmod +x build.sh
+ 1314  ./build.sh
+ 1315  vim build.sh
+ 1316  ./build.sh 
+ 1317  gdb ./gematrix 
+ 1318  ls
+ 1319  cat matrix.c 
+ 1320  cd ..
+ 1321  ls
+ 1322  cd 丁立权
+ 1323  ls
+ 1324  sudo poweroff
+ 1325  sudo reboot
+ 1326  sudo poweroff
+ 1327  df -lh
+ 1328  lsblk
+ 1329  ls
+ 1330  cd /tmp/
+ 1331  ls
+ 1332  git clone https://github.com/armbian/linux-rockchip.git
+ 1333  wget https://codeload.github.com/armbian/linux-rockchip/zip/refs/heads/rk-6.1-rkr4.1
+ 1334  git clone https://github.com/armbian/linux-rockchip.git
+ 1335  ls
+ 1336  git clone https://github.com/armbian/linux-rockchip.git
+ 1337  ls
+ 1338  rm -rf linux-rockchip
+ 1339  git clone https://github.com/armbian/linux-rockchip.git
+ 1340  rm -rf linux-rockchip
+ 1341  ls
+ 1342  git clone https://github.com/armbian/linux-rockchip.git
+ 1343  ls
+ 1344  rm -rf linux-rockchip
+ 1345  git clone https://github.com/armbian/linux-rockchip.git
+ 1346  rm -rf linux-rockchip
+ 1347  git clone https://github.com/armbian/linux-rockchip.git
+ 1348  ls
+ 1349  git clone https://github.com/armbian/linux-rockchip.git
+ 1350  rm -rf linux-rockchip
+ 1351  git clone https://github.com/armbian/linux-rockchip.git
+ 1352  ls
+ 1353  git clone https://github.com/armbian/build
+ 1354  cd build
+ 1355  sudo apt-get -y install git
+ 1356  git clone --depth=1 --branch=main https://github.com/armbian/build
+ 1357  cd build/
+ 1358  ls
+ 1359  ./compile.sh
+ 1360  ./compile.sh build
+ 1361  cd ..
+ 1362  git clone https://github.com/armbian/linux-rockchip.git
+ 1363  rm -rf linux-rockchip
+ 1364  git clone https://github.com/armbian/linux-rockchip.git
+ 1365  cd linux-rockchip/
+ 1366  ls
+ 1367  cd ..
+ 1368  cp -r linux-rockchip linux-rockchip_back
+ 1369  tar -zcvf linux-rockchip.tar.gz linux-rockchip
+ 1370  scp linux-rockchip.tar.gz luban@192.168.1.119:/home/luban
+ 1371  lsblk
+ 1372  sudo mount /dev/sdc1 /mnt/
+ 1373  ls
+ 1374  cd /mnt/
+ 1375  ls
+ 1376  lsblk
+ 1377  ls
+ 1378  cd ..
+ 1379  ls
+ 1380  sudo umount /mnt 
+ 1381  sudo mount /dev/sda2 /mnt/
+ 1382  lsblk
+ 1383  sudo fdisk -l
+ 1384  sudo apt install partclone
+ 1385  cd /sda1
+ 1386  lsblk
+ 1387  df -lh
+ 1388  cd /opt/
+ 1389  ls
+ 1390  sudo partclone.dd -c -s /dev/sda -o sda.img
+ 1391  sudo partclone.dd -s /dev/sda -o sda.img
+ 1392  df -lh
+ 1393  lsblk
+ 1394  ls
+ 1395  du -sh *
+ 1396  rm sda.img 
+ 1397  sudo rm sda.img 
+ 1398  sudo reboot
+ 1399  sudo fdisk -l
+ 1400  sudo poweroff
+ 1401  sudo snap refresh v2raya
+ 1402  sudo snap refresh
+ 1403  sudo snap refresh v2raya
+ 1404  cd /tmp/
+ 1405  git clone https://github.com/armbian/build
+ 1406  sudo find / -name geoip.dat
+ 1407  sudo poweroff
+ 1408  exit
+ 1409  cd /
+ 1410  ls
+ 1411  cd data/
+ 1412  ls
+ 1413  cd sdk/
+ 1414  ls
+ 1415  cd gdk8/
+ 1416  ls
+ 1417  cd LinuxSDK/
+ 1418  ls
+ 1419  cd rk3328_linux_release_v2.5.1_20210301/
+ 1420  ls
+ 1421  cd /data/sdk/gdk8/LinuxSDK/rk3328_linux_release_v2.5.1_20210301/ubunturootfs
+ 1422  sudo mount rk3328-ubuntu1804-arm64-rootfs.img ./mnt/
+ 1423  sudo ./bind.sh -m ./mnt/
+ 1424  sudo chroot ./mnt/
+ 1425  sudo ./bind.sh -u ./mnt/
+ 1426  sudo umount ./mnt
+ 1427  sudo reboot
+ 1428  ls
+ 1429  cd /data/sdk/gdk8/LinuxSDK/rk3328_linux_release_v2.5.1_20210301/ubunturootfs
+ 1430  ls
+ 1431  cd mnt/
+ 1432  ls
+ 1433  mv ~/strace ./tmp/
+ 1434  top
+ 1435  cd /data/sdk/gdk8/LinuxSDK/rk3328_linux_release_v2.5.1_20210301
+ 1436  ./build.sh 
+ 1437  cd /data/sdk/gdk8/LinuxSDK/rk3328_linux_release_v2.5.1_20210301/rockdev/pack/
+ 1438  ls
+ 1439  du -sh *
+ 1440  ls
+ 1441  mv GDK8UBUNTU.IMG-GPT-20250205-1426.img gdk8-fengxian3.img
+ 1442  ls
+ 1443  sudo poweroff
+ 1444  screenfetch
+ 1445  sudo apt install screenfetch
+ 1446  screenfetch
+ 1447  sudo reboot
+ 1448  sudo apt install nvidia-driver-<version
+ 1449  ubuntu-drivers devices
+ 1450  screenfetch
+ 1451  sudo apt install nvidia-driver-550
+ 1452  sudo reboot
+ 1453  exit
+ 1454  ls
+ 1455  ls
+ 1456  cd u-boot/
+ 1457  ls
+ 1458  ./make.sh 
+ 1459  ls cmd/
+ 1460  ./make.sh 
+ 1461  ls 
+ 1462  ls drivers/input/
+ 1463  ./make.sh 
+ 1464  ls
+ 1465  make clean
+ 1466  ./make.sh 
+ 1467  ls
+ 1468  cd ..
+ 1469  ls
+ 1470  cp -r u-boot u-boot_old_2025_02_06
+ 1471  ls
+ 1472  cd u-boot
+ 1473  ls
+ 1474  ./make.sh 
+ 1475  cd cmd
+ 1476  ls
+ 1477  vim sys_update.c
+ 1478  ls Makefile 
+ 1479  cd ..
+ 1480  ls cmd/Makefile 
+ 1481  pwd
+ 1482  ./make.sh 
+ 1483  ls
+ 1484  make clean
+ 1485  ./make.sh 
+ 1486  make clean
+ 1487  ./make.sh 
+ 1488  make clean
+ 1489  ./make.sh 
+ 1490  ls tools/Makefile 
+ 1491  ./make.sh 
+ 1492  ls 
+ 1493  ls -la uboot.img 
+ 1494  clear
+ 1495  scp uboot.img geduer@192.168.1.105:/home/geduer
+ 1496  ls
+ 1497  ./make.sh 
+ 1498  ls include/osl.h 
+ 1499  ./make.sh 
+ 1500  du -sh uboot.img 
+ 1501  scp uboot.img geduer@192.168.1.105:/home/geduer
+ 1502  ./make.sh 
+ 1503  scp uboot.img geduer@192.168.1.105:/home/geduer
+ 1504  ./make.sh 
+ 1505  scp uboot.img geduer@192.168.1.105:/home/geduer
+ 1506  ./make.sh 
+ 1507  scp uboot.img geduer@192.168.1.105:/home/geduer
+ 1508  ./make.sh 
+ 1509  scp uboot.img geduer@192.168.1.105:/home/geduer
+ 1510  ls
+ 1511  cd u-boot
+ 1512  ls
+ 1513  ls
+ 1514  ls -la uboot.img 
+ 1515  scp uboot.img geduer@192.168.1.105:/home/geduer
+ 1516  cd u-boot_old_2025_02_06/
+ 1517  ls
+ 1518  cd common/
+ 1519  cat osl.c 
+ 1520  top
+ 1521  sudo poweroff
+ 1522  ls
+ 1523  cd ..
+ 1524  ls
+ 1525  mv ~/hertz-dev-model.tar.gz ./
+ 1526  ls
+ 1527  tar -zxvf hertz-dev-model.tar.gz 
+ 1528  top
+ 1529  ls
+ 1530  cd ..
+ 1531  ls
+ 1532  cd hertz-dev-model/
+ 1533  ls
+ 1534  cd hertz-dev/
+ 1535  ls
+ 1536  cd ..
+ 1537  du -sh hertz-dev
+ 1538  cd hertz-dev/
+ 1539  ls
+ 1540  cd ..
+ 1541  du -sh hertz-dev
+ 1542  du -sh hertz-dev/inference_apatosaurus_95000.pt 
+ 1543  screenfetch 
+ 1544  top
+ 1545  screenfetch 
+ 1546  du -sh hertz-dev
+ 1547  top
+ 1548  ls /gewu/ai_code/hertz-dev-model/hertz-dev/inference_caraway_112000.pt\
+ 1549  ls /gewu/ai_code/hertz-dev-model/hertz-dev/inference_caraway_112000.pt
+ 1550  /gewu/ai_code/hertz-dev-model/hertz-dev/inference_caraway_112000.pt
+ 1551  ls /gewu/ai_code/hertz-dev-model/hertz-dev/
+ 1552  ls -la
+ 1553  ls -la hertz-dev/
+ 1554  cd hertz-dev/
+ 1555  ls
+ 1556  mv ~/inference_caraway_112000.pt ./
+ 1557  top
+ 1558  screenfetch 
+ 1559  cd ..
+ 1560  du -sh hertz-dev
+ 1561  du -sh /gewu/ai_code/hertz-dev-model/hertz-dev/inference_caraway_112000.pt
+ 1562  screenfetch 
+ 1563  sudo poweroff
+ 1564  ls
+ 1565  cd /
+ 1566  ls
+ 1567  cd gewu/
+ 1568  ls
+ 1569  mkdir ai_code
+ 1570  cd ai_code/
+ 1571  ls
+ 1572  mv ~/hertz-dev-code.tar.gz ./
+ 1573  ls
+ 1574  tar -zxvf hertz-dev-code.tar.gz 
+ 1575  ls
+ 1576  cd hertz-dev-code/
+ 1577  ls
+ 1578  python3 -m venv .venv
+ 1579  sudo apt install python3.10-venv
+ 1580  python3 -m venv .venv
+ 1581  source .venv/bin/activate
+ 1582  pip install -r requirements.txt  -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1583  df -lh
+ 1584  sudo apt-get install libportaudio2
+ 1585  jupyter server password
+ 1586  sudo apt install jupyter-core
+ 1587  deactivate
+ 1588  git lfs install
+ 1589  sudo apt-get install git-lfs
+ 1590  cd ..
+ 1591  ls
+ 1592  git lfs install
+ 1593  ls -la
+ 1594  top
+ 1595  ls
+ 1596  source .venv/bin/activate
+ 1597  torch
+ 1598  pip show torch
+ 1599  jupyter server password
+ 1600  jupyter notebook password
+ 1601  pip list | grep notebook
+ 1602  pip install notebook -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1603  jupyter notebook password
+ 1604  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1605  pip install --upgrade jupyter ipywidgets -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1606  deactivate
+ 1607  ps aux |py
+ 1608  source .venv/bin/activate
+ 1609  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1610  deactivate
+ 1611  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1612  source .venv/bin/activate
+ 1613  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1614  deactivate
+ 1615  source .venv/bin/activate
+ 1616  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1617  deactivate
+ 1618  source .venv/bin/activate
+ 1619  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1620  deactivate
+ 1621  ps aux
+ 1622  kill -9 84645
+ 1623  kill -9 82612
+ 1624  ps aux |grep jupyter
+ 1625  kill -9 40422
+ 1626  kill -9 46234
+ 1627  kill -9 50775
+ 1628  kill -9 40422
+ 1629  ps aux |grep jupyter
+ 1630  kill -9 80405
+ 1631  ps aux |grep jupyter
+ 1632  kill -9 80906
+ 1633  ps aux |grep jup
+ 1634  source .venv/bin/activate
+ 1635  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1636  ls
+ 1637  cd gpucamp/
+ 1638  vim gemm.cu
+ 1639  nvcc gemm.cu
+ 1640  vim gemm.cu
+ 1641  nvcc gemm.cu -o gemm
+ 1642  cat gemm.cu 
+ 1643  nvcc gemm.cu -o gemm
+ 1644  vim gemm.cu
+ 1645  nvcc gemm.cu -o gemm
+ 1646  ls
+ 1647  nvcc higpu.cu
+ 1648  cat higpu.cu 
+ 1649  vim higpu.cu 
+ 1650  nvcc higpu.cu
+ 1651  nvcc higpu.cu -o higpu
+ 1652  ./higpu
+ 1653  cuda-gdb
+ 1654  cuda-gdb higpu
+ 1655  nvcc -g higpu.cu -o higpu
+ 1656  cuda-gdb higpu
+ 1657  ./higpu 
+ 1658  nvcc gemm.cu -o gemm
+ 1659  vim gemm.cu 
+ 1660  nvcc gemm.cu -o gemm
+ 1661  cp gemm.cu gemm_orig.cu
+ 1662  vim gemm.cu
+ 1663  rm gemm.cu
+ 1664  vim gemm.cu
+ 1665  nvcc -g gemm.cu -o gemm
+ 1666  ./gemm
+ 1667  vim gemm.cu
+ 1668  nvcc -g gemm.cu -o gemm
+ 1669  ./gemm
+ 1670  nvprof ./gemm
+ 1671  time ./gemm
+ 1672  vim gemm_share.cu
+ 1673  nvcc -g gemm_share.cu -o gemm_share
+ 1674  ./gemm_share 
+ 1675  vim gemm.cu
+ 1676  vim gemm2.cu
+ 1677  nvcc -g gemm2.cu -o gemm2
+ 1678  ./gemm2
+ 1679  vim gemm2.cu
+ 1680  nvcc -g gemm2.cu -o gemm2
+ 1681  ./gemm2
+ 1682  vim gemm2.cu
+ 1683  nvcc -g gemm2.cu -o gemm2
+ 1684  ./gemm2
+ 1685  vim gemm2.cu
+ 1686  nvcc -g gemm2.cu -o gemm2
+ 1687  ./gemm2
+ 1688  vim gemm2.cu
+ 1689  nvcc -g gemm2.cu -o gemm2
+ 1690  vim gemm2.cu
+ 1691  nvcc -g gemm2.cu -o gemm2
+ 1692  ./gemm2
+ 1693  export OMP_NUM_THREADS=4
+ 1694  ./gemm2
+ 1695  lscpu
+ 1696  export OMP_NUM_THREADS=8
+ 1697  ./gemm2
+ 1698  vim geomp.cpp
+ 1699  g++ geomp.cpp -o geomp
+ 1700  ./geomp
+ 1701  g++ -g geomp.cpp -o geomp
+ 1702  gdb geomp
+ 1703  cat geomp.cpp 
+ 1704  g++ -g geomp.cpp -o geomp
+ 1705  g++ -v -g geomp.cpp -o geomp
+ 1706  g++ -fopenmp -g geomp.cpp -o geomp
+ 1707  ./geomp
+ 1708  nvcc -fopenmp -g gemm2.cu -o gemm2
+ 1709  nvcc -Xcompiler -fopenmp -g gemm2.cu -o gemm2
+ 1710  ./gemm2
+ 1711  vim Makefile
+ 1712  make
+ 1713  make clean
+ 1714  make
+ 1715  ./gemm2
+ 1716  nvprof ./gemm2
+ 1717  nvprof --help
+ 1718  ldd gemm2
+ 1719  cat gemm.cu
+ 1720  ls
+ 1721  cat gemm2.cu
+ 1722  ls
+ 1723  which nvprof
+ 1724  ldd /usr/bin/nvprof
+ 1725  ls /usr/bin/nvprof
+ 1726  cat /usr/bin/nvprof
+ 1727  cd /usr/lib/nvidia-cuda-toolkit/
+ 1728  ls
+ 1729  cd bin
+ 1730  ls
+ 1731  ll
+ 1732  ls
+ 1733  cd /gewu/
+ 1734  ls
+ 1735  cd ai_code/
+ 1736  ls
+ 1737  mv hertz-dev-code.tar.gz temp/
+ 1738  ls
+ 1739  tar -zcvf hertz-dev-code.tar.gz hertz-dev-code
+ 1740  ls
+ 1741  cd hertz-dev-code/
+ 1742  ls
+ 1743  cd ..
+ 1744  ls
+ 1745  rm hertz-dev-code.tar.gz 
+ 1746  ls temp/
+ 1747  ls
+ 1748  mkdir up
+ 1749  ls
+ 1750  cp -r hertz-dev-code up/
+ 1751  du -sh hertz-dev-code/
+ 1752  du -sh hertz-dev-code
+ 1753  ls
+ 1754  rm -rf up
+ 1755  ls temp/
+ 1756  ls
+ 1757  cd temp/
+ 1758  ls
+ 1759  top
+ 1760  ls -la
+ 1761  ls -la /gewu/ai_code/hertz-dev-model/hertz-dev/inference_scion_54000.pt
+ 1762  ls
+ 1763  cd ..
+ 1764  ls
+ 1765  cd hertz-dev-model/
+ 1766  ls
+ 1767  cd hertz-dev-model/hertz-dev
+ 1768  ls
+ 1769  cd hertz-dev/
+ 1770  ls
+ 1771  cd ..
+ 1772  ls
+ 1773  rm -rf hertz-dev
+ 1774  ls
+ 1775  cd ..
+ 1776  ls
+ 1777  cd temp/
+ 1778  ls
+ 1779  ls hertz-dev-model
+ 1780  ls
+ 1781  cd hertz-dev-model/
+ 1782  ls
+ 1783  mv hertz-dev /gewu/ai_code/hertz-dev-model/
+ 1784  ls
+ 1785  cd ..
+ 1786  ls
+ 1787  cd ..
+ 1788  ls
+ 1789  rm -rf temp
+ 1790  df -lh
+ 1791  screenfetch 
+ 1792  source .venv/bin/activate
+ 1793  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1794  ls
+ 1795  pip install -r requirements.txt
+ 1796  python inference_server.py
+ 1797  cd /gewu/
+ 1798  ls
+ 1799  cd ai_code/
+ 1800  ls
+ 1801  lsblk
+ 1802  df -lh
+ 1803  ls
+ 1804  mkdir temp
+ 1805  ls
+ 1806  mv hertz-dev-model.tar.gz temp/
+ 1807  cd temp/
+ 1808  ls
+ 1809  tar -zxf hertz-dev-model.tar.gz 
+ 1810  cd gpucamp/
+ 1811  ls
+ 1812  vim gedm.cu
+ 1813  nvcc gedm.cu
+ 1814  vim gedm.cu
+ 1815  nvcc gedm.cu
+ 1816  man cudaMalloc
+ 1817  nvcc gedm.cu
+ 1818  vim gedm.cu
+ 1819  nvcc gedm.cu
+ 1820  vim gedm.cu
+ 1821  nvcc gedm.cu
+ 1822  vim gedm.cu
+ 1823  nvcc gedm.cu
+ 1824  vim gedm.cu
+ 1825  nvcc gedm.cu
+ 1826  vim gedm.cu
+ 1827  nvcc gedm.cu
+ 1828  nvcc -g -G gedm.cu -o gedm
+ 1829  ./gedm
+ 1830  nvcc gedm.cu
+ 1831  ./gedm
+ 1832  nvcc gedm.cu
+ 1833  vim gedm.cu
+ 1834  nvcc -g -G gedm.cu -o gedm
+ 1835  ./gedm
+ 1836  nvprof ./gedm
+ 1837  nvprof ./gedm 0x1000000
+ 1838  man atol
+ 1839  man strtoul
+ 1840  vim gedm.cu
+ 1841  nvcc -g -G gedm.cu -o gedm
+ 1842  ./gedm 0x100000
+ 1843  nvprof ./gedm 0x100000
+ 1844  nvprof ./gedm 0x1000000
+ 1845  nvprof ./gedm 0x10000000
+ 1846  nvprof ./gedm 0x100000000
+ 1847  nvprof ./gedm 0x10000000
+ 1848  nvprof ./gedm 0x40000000
+ 1849  vim sqrtcpu.c
+ 1850  gcc sqrtcpu.c
+ 1851  gcc sqrtcpu.c -lmath
+ 1852  gcc sqrtcpu.c -lm
+ 1853  ./a.out
+ 1854  vim sqrtcpu.c
+ 1855  gcc sqrtcpu.c -lm
+ 1856  vim sqrtcpu.c
+ 1857  gcc sqrtcpu.c -lm
+ 1858  man strtoul
+ 1859  vim sqrtcpu.c
+ 1860  gcc sqrtcpu.c -lm
+ 1861  vim sqrtcpu.c
+ 1862  gcc sqrtcpu.c -lm
+ 1863  vim sqrtcpu.c
+ 1864  gcc sqrtcpu.c -lm
+ 1865  ./a.out
+ 1866  ./a.out 0x40000000
+ 1867  time ./gedm 0x40000000
+ 1868  time ./gedm 0x4000000
+ 1869  ./a.out 0x4000000
+ 1870  nvprof ./gedm 0x4000000
+ 1871  cd /gewu/
+ 1872  cd ai_code/
+ 1873  ls -la
+ 1874  cd hertz-dev-code/
+ 1875  ls -la
+ 1876  jupyter notebook --generate-config
+ 1877  top
+ 1878  sudo poweroff
+ 1879  top
+ 1880  ls
+ 1881  ls ../hertz-dev-model/
+ 1882  ls ../hertz-dev-model/hertz-dev/
+ 1883  source .venv/bin/activate
+ 1884  jupyter notebook --generate-config
+ 1885  vim /home/geduer/.jupyter/jupyter_notebook_config.py
+ 1886  deactivate
+ 1887  source .venv/bin/activate
+ 1888  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1889  deactivate
+ 1890  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1891  source .venv/bin/activate
+ 1892  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser
+ 1893  cd /gewu/ai_code/hertz-dev-model/
+ 1894  ls
+ 1895  cd hertz-dev/
+ 1896  ls -la
+ 1897  uname -a
+ 1898  ls
+ 1899  df -h
+ 1900  sudo apt install ncat
+ 1901  nc -nv -l 127.0.0.1 -p 5555
+ 1902  netcat -nv -l 127.0.0.1 -p 5555
+ 1903  ncat -nv -l 127.0.0.1 -p 5555
+ 1904  sudo ufw allow 5555
+ 1905  sudo ufw reload
+ 1906  ncat -nv -l 127.0.0.1 -p 5555
+ 1907  sudo ufw enabled
+ 1908  sudo ufw enable
+ 1909  ncat -nv -l 127.0.0.1 -p 5555
+ 1910  sudo ufw allow out 5555
+ 1911  ncat -nv -l 127.0.0.1 -p 5555
+ 1912  sudo ufw reload
+ 1913  ncat -nv -l 127.0.0.1 -p 5555
+ 1914  sudo iptables -nL
+ 1915  ncat -nv -l 127.0.0.1 -p 5555
+ 1916  sudo ufw disabled
+ 1917  sudo ufw disable
+ 1918  ls
+ 1919  sudo iptables -I INPUT -p tcp --dport 5555 -j ACCEPT
+ 1920  sudo iptables -I INPUT -p udp --dport 5555 -j ACCEPT
+ 1921  sudo service iptables save
+ 1922  sudo iptables -nL
+ 1923  ncat -nv -l 127.0.0.1 -p 5555
+ 1924  sudo iptables -I INPUT -p udp --dport 5569 -j ACCEPT
+ 1925  sudo iptables -I INPUT -p tcp --dport 5569 -j ACCEPT
+ 1926  ncat -nv -l 127.0.0.1 -p 5569
+ 1927  sudo iptables -I INPUT -m state --state NEW -p tcp --dport 9090 -j ACCEPT
+ 1928  sudo iptables -I INPUT -m state --state NEW -p udp --dport 9090 -j ACCEPT
+ 1929  sudo iptables -A INPUT -m state --state NEW -p tcp --dport 9090 -j ACCEPT
+ 1930  sudo iptables -A INPUT -m state --state NEW -p udp --dport 9090 -j ACCEPT
+ 1931  sudo iptables -A H-Firewall-1-INPUT -m state --state NEW -p udp --dport 9090 -j ACCEPT
+ 1932  service iptables save
+ 1933  iptables-apply 
+ 1934  iptables-legacy-save 
+ 1935  sudo iptables-legacy-save 
+ 1936  sudo iptables -nL
+ 1937  ncat -nv -l 127.0.0.1 -p 9090
+ 1938  sudo apt search netcat
+ 1939  sudo apt install netcat-traditional
+ 1940  nc.traditional -nv -l 127.0.0.1 -p 9090
+ 1941  nc.traditional -nv -l 127.0.0.1 -p 9090 -vvv
+ 1942  ncat -nv -l 127.0.0.1 -p 9090
+ 1943  ncat -nv -l 192.168.1.210 -p 9090
+ 1944  nc.traditional -nv -l 192.168.1.210 -p 9090
+ 1945  ncat -nv -l 192.168.1.210 -p 9090
+ 1946  ncat -nv -vvl 192.168.1.210 -p 9090
+ 1947  nc.traditional -nv -vvl 192.168.1.210 -p 9090
+ 1948  nc.traditional -n -vvl 192.168.1.210 -p 9090
+ 1949  nc.traditional -vvl 192.168.1.210 -p 9090
+ 1950  nc.traditional -vvl 127.0.0.1 -p 9090
+ 1951  nc.traditional -vvl 127.0.0.1 -p 9090 -c '
+ 1952  set -x
+ 1953  nc.traditional -vvl 127.0.0.1 -p 9090
+ 1954  nc.traditional -vvl localhost.localdomain -p 9090
+ 1955  nc.traditional -nv -l localhost.localdomain -p 9090
+ 1956  nc.traditional -nv -l localhost -p 9090
+ 1957  nc.traditional -nv -l 127.0.0.1 -p 9090
+ 1958  cd /data/
+ 1959  ls
+ 1960  cd sdk/
+ 1961  ls
+ 1962  cd gdk8/
+ 1963  ls
+ 1964  cd LinuxSDK/
+ 1965  ls
+ 1966  cd rk3328_linux_release_v2.5.1_20210301/
+ 1967  l;s
+ 1968  ls
+ 1969  cd u-boot/
+ 1970  ls
+ 1971  ls test/
+ 1972  mkdir fx3_uboot
+ 1973  cp u-boot fx3_uboot/
+ 1974  cp uboot.img fx3_uboot/
+ 1975  zip -r fx3_uboot.zip fx3_uboot
+ 1976  ls
+ 1977  rm fx3_uboot -rf
+ 1978  ls
+ 1979  cd /gewu/ai_code/
+ 1980  cd hertz-dev-model/
+ 1981  ls
+ 1982  cd hertz-dev/
+ 1983  ls
+ 1984  du -sh *
+ 1985  scp inference_care_50000.pt root@116.148.216.66:/root
+ 1986  scp inference_care_50000.pt root@116.148.216.66:/root/
+ 1987  du -sh *
+ 1988  ls
+ 1989  cd ..
+ 1990  ls
+ 1991  cd hertz-dev-code/
+ 1992  ls
+ 1993  source .venv/bin/activate\
+ 1994  source .venv/bin/activate
+ 1995  python3 inference_client.py 
+ 1996  cd gpucamp
+ 1997  nvcc -cubin higpu.cu
+ 1998  ls
+ 1999  cat a.out
+ 2000  xterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-2xterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256color
+ 2001  nvcc -cubin higpu.cu 
+ 2002  nvcc -cubin higpu.cu -o higpu.cubin
+ 2003  readelf -S higpu.cubin
+ 2004  ./higpu.cubin
+ 2005  nvdisasm ./higpu.cubin
+ 2006  cuobjdump -sass higpu.cubin
+ 2007  cuobjdump -sass higpu
+ 2008  ls
+ 2009  cat higpu.cu
+ 2010  vim higpu.cu
+ 2011  nvcc -g -G higpu.cu -o higpu
+ 2012  cuobjdump -sass higpu
+ 2013  cuobjdump -ptx higpu
+ 2014  cuda-gdb ./higpu
+ 2015  cuobjdump higpu -lelf
+ 2016  cuobjdump higpu -xelf all
+ 2017  ll
+ 2018  cuobjdump higpu -res-usage
+ 2019  telnet 183.239.162.232 8000
+ 2020  nvcc
+ 2021  nvcc --help
+ 2022  nvcc -g -G higpu.cu -gpu-code=sm_50 -o higpu
+ 2023  nvcc -g -G higpu.cu -code sm_50 -o higpu
+ 2024  nvcc -g -G higpu.cu -arch sm_50 -o higpu
+ 2025  nvcc -g -G higpu.cu -arch sm_60 -o higpu
+ 2026  cuobjdump higpu -lelf
+ 2027  nvcc -g -G higpu.cu -arch sm_60 -arch sm_62 -o higpu
+ 2028  nvcc -g -G higpu.cu -arch sm_60 -code sm_62 -o higpu
+ 2029  nvcc -g -G higpu.cu -gencode arch=compute_30,code=sm_30 -gencode arch=compute_35,code=sm_35  -o higpu
+ 2030  nvcc -g -G higpu.cu -gencode arch=compute_60,code=sm_60 -gencode arch=compute_52,code=sm_52  -o higpu
+ 2031  cuobjdump higpu -lelf
+ 2032  ptxas
+ 2033  nvcc -g -G higpu.cu -o higpu --dryrun
+ 2034  nvcc -g -G higpu.cu -o higpu --keep
+ 2035  ll
+ 2036  cat higpu_dlink.fatbin.c 
+ 2037  nvcc -g -G higpu.cu -o higpu --dryrun
+ 2038  ls
+ 2039  fatbinary
+ 2040  vim geinc.cu
+ 2041  nvcc -g -G -o geinc geinc.cu
+ 2042  nvcc -g -G -rdc=true --ptx geinc.cu 
+ 2043  ll
+ 2044  vim geinc.ptx 
+ 2045  nvcc geinc.ptx -dlink
+ 2046  ll
+ 2047  mkdir devptx
+ 2048  cd devptx
+ 2049  mv ../geinc.* .
+ 2050  ls
+ 2051  nvcc geinc.ptx -dlink
+ 2052  ll
+ 2053  cat geinc.ptx
+ 2054  cp geinc.cu gemain.cu
+ 2055  vim gemain.cu
+ 2056  nvcc gemain.cu -rdc=true --compile
+ 2057  ll
+ 2058  nvcc gemain.o a_dlink.o --lib -o geinc.lib
+ 2059  nvcc geinc.lib -o geinc
+ 2060  nvcc gemain.o a_dlink.o 
+ 2061  vim geinc.cu
+ 2062  nvcc geinc.cu gemain.cu
+ 2063  nvcc geinc.cu gemain.cu -o geinc
+ 2064  ./geinc
+ 2065  nvcc geinc.cu -rdc=true --ptx
+ 2066  vim geinc.ptx 
+ 2067  nvcc geinc.ptx -dlink
+ 2068  ll
+ 2069  nvcc gemin.o a_dlink.o --lib -o geinc.lib
+ 2070  nvcc gemain.o a_dlink.o --lib -o geinc.lib
+ 2071  nvcc geinc.lib
+ 2072  ll
+ 2073  cuobjdump a_dlink.o 
+ 2074  cuobjdump -d a_dlink.o 
+ 2075  cuobjdump  a_dlink.o -lelf
+ 2076  cat gemain.cu
+ 2077  ptxas geinc.ptx
+ 2078  ll
+ 2079  nvcc gemain.o elf.o --lib -o geinc.lib
+ 2080  nvcc geinc.lib
+ 2081  readelf -s a_dlink.o
+ 2082  nvcc gemain.cu
+ 2083  nvcc gemain.cu -rdc=true 
+ 2084  nvcc gemain.cu -rdc=true --compile
+ 2085  ll
+ 2086  nvcc gemain.o a_dlink.o --lib -o geinc.lib
+ 2087  nvcc geinc.lib
+ 2088  cat gemain.cu
+ 2089  nvcc geinc.cu gemain.cu --dryrun
+ 2090  nvcc geinc.cu gemain.cu --dryrun 2>dryrun.out
+ 2091  cat dryrun.out 
+ 2092  vim dryrun.out 
+ 2093  nvcc geinc.cu gemain.cu --keep --dryrun 2>dryrun.out
+ 2094  ll
+ 2095  gedit dryrun.out 
+ 2096  ptxas -arch=sm_52 -m64 "geinc.ptx"  -o "geinc.sm_52.cubin"
+ 2097  chmod +x dryrun.out 
+ 2098  ./dryrun.out 
+ 2099  nvcc geinc.cu gemain.cu --keep
+ 2100  ./dryrun.out 
+ 2101  cat dryrun.out 
+ 2102  nvcc geinc.cu gemain.cu --keep --dryrun 2>dryrun.out
+ 2103  ./dryrun.out 
+ 2104  ls
+ 2105  vim dryrun.out 
+ 2106  ./dryrun.out 
+ 2107  ll
+ 2108  ./geinc 
+ 2109  rm geinc
+ 2110  ./geinc 
+ 2111  ./dryrun.out 
+ 2112  ./geinc 
+ 2113  ./dryrun.out 
+ 2114  gedit dryrun.out 
+ 2115  cp dryrun.out bld.sh
+ 2116  nvcc geinc.cu gemain.cu --keep --dryrun 2>dryrun.out
+ 2117  cat dryrun.out 
+ 2118  ls
+ 2119  ./bld.sh 
+ 2120  ./bld.sh -x
+ 2121  bash -x ./bld.sh 
+ 2122  vim bld.sh 
+ 2123  ./bld.sh 
+ 2124  ./a.out 
+ 2125  rm a.out
+ 2126  ./bld.sh 
+ 2127  ./a.out 
+ 2128  vim bld.sh 
+ 2129  ./bld.sh 
+ 2130  ls
+ 2131  vim geinc.ptx
+ 2132  cat bld.sh
+ 2133  ptxas -arch=sm_52 -m64 "geinc.ptx"  -o "geinc.sm_52.cubin"
+ 2134  ./bld.sh 
+ 2135  ./a.out 
+ 2136  cat geinc.ptx 
+ 2137  ls
+ 2138  vim bld.sh 
+ 2139  vim geinc.ptx 
+ 2140  ./bld.sh 
+ 2141  ./a.out 
+ 2142  vim geinc.ptx 
+ 2143  vim bld.sh
+ 2144  ./bld.sh 
+ 2145  ./a.out 
+ 2146  vim geinc.ptx
+ 2147  ./bld.sh
+ 2148  ls
+ 2149  cat gemain.ptx 
+ 2150  cat dryrun.out | grep cicc
+ 2151  cicc
+ 2152  cat dryrun.out 
+ 2153  nvcc
+ 2154  nvcc geinc.ptx
+ 2155  nvcc geinc.ptx --fatbin
+ 2156  ls
+ 2157  ll
+ 2158  nvcc gemain.cu geinc.fatbin
+ 2159  cat a_dlink.fatbin.c 
+ 2160  nvcc geinc.lib 
+ 2161  nvcc geinc.lib geinc.fatbin.c 
+ 2162  nvcc geinc.lib a_dlink.fatbin.c 
+ 2163  nvcc geinc.lib a_dlink.fatbin.c a_dlink.reg.c 
+ 2164  nvcc gemain.cu geinc.cu --device-c 
+ 2165  nvcc gemain.o geinc.o 
+ 2166  nvcc gemain.o geinc.o -o geinc
+ 2167  ./geinc
+ 2168  nvcc geinc.ptx --device-c 
+ 2169  nvcc gemain.o geinc. -o geinc
+ 2170  nvcc gemain.o geinc.o -o geinc
+ 2171  nvcc geinc.ptx --device-c --keep
+ 2172  ll
+ 2173  mkdir test
+ 2174  cd test
+ 2175  cp ../geinc.ptx .
+ 2176  nvcc geinc.ptx --device-c --keep
+ 2177  ll
+ 2178  cd ..
+ 2179  nvcc gemain.o geinc.o -o geinc
+ 2180  nvcc gemain.o geinc.o geinc.fatbin.c -o geinc
+ 2181  nvcc --gpu-architecture=sm_50 --device-c geinc.ptx
+ 2182  nvcc --gpu-architecture=sm_60 --device-c geinc.ptx
+ 2183  ll
+ 2184  g++ gemain.o geinc.o
+ 2185  g++ gemain.o geinc.o --library=cudadevrt --library=cudart
+ 2186  g++ gemain.o geinc.o -lcudadevrt --library=cudart
+ 2187  g++ gemain.o geinc.o -lcudadevrt -lcudart
+ 2188  nvcc --device-link geinc.o gemain.o -o link.o
+ 2189  cd test/
+ 2190  ls
+ 2191  nvcc --device-c geinc.ptx
+ 2192  ll
+ 2193  cp geinc.o ..
+ 2194  cd ..
+ 2195  nvcc --device-link geinc.o gemain.o -o link.o
+ 2196  nvcc --lib -o libgpu.a geinc.o gemain.o
+ 2197  g++ gemain.o geinc.o -lcudadevrt -lcudart -lgpu
+ 2198  g++ gemain.o geinc.o -lcudadevrt -lcudart --library=gpu
+ 2199  cat dryrun.out 
+ 2200  g++ gemain.o geinc.o a_dlink.o -lcudadevrt -lcudart 
+ 2201  g++ gemain.o geinc.o a_dlink.o libgpu.a -lcudadevrt -lcudart 
+ 2202  g++ gemain.o geinc.o a_dlink.o libgpu.a -lcudadevrt -lcudart -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl
+ 2203  g++ --help
+ 2204  g++ gemain.o geinc.o a_dlink.o libgpu.a -lcudadevrt -lcudart -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl
+ 2205  g++ --library
+ 2206  g++ --library=gpu
+ 2207  ll
+ 2208  g++ --library=libgpu.a
+ 2209  g++ --library=gpu
+ 2210  ./bld.sh 
+ 2211  ./a.out
+ 2212  g++ gemain.o geinc.o -L. -lgpu -lcudadevrt -lcudart -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl
+ 2213  g++ gemain.o geinc.o -L. -lgpu -lcudadevrt -lcudart -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl -o geinc2
+ 2214  ./geinc2
+ 2215  nvcc --lib -o libgpu.a geinc.o gemain.o
+ 2216  vim Makefile
+ 2217  make clean
+ 2218  make
+ 2219  vim Makefile
+ 2220  make
+ 2221  ./geinc2
+ 2222  vim Makefile
+ 2223  make
+ 2224  vim Makefile 
+ 2225  history
+ 2226  history > ptxhistory.txt

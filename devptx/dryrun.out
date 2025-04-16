@@ -1,0 +1,30 @@
+#$ _NVVM_BRANCH_=nvvm
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _THERE_=/usr/lib/nvidia-cuda-toolkit/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_SIZE_=64
+#$ NVVMIR_LIBRARY_DIR=/usr/lib/nvidia-cuda-toolkit/libdevice
+#$ PATH=/usr/lib/nvidia-cuda-toolkit/bin:/home/geduer/.local/bin:/home/geduer/.nvm/versions/node/v16.20.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/geduer/Downloads/node-v16.20.2-linux-x64/bin
+#$ LIBRARIES=  -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu
+#$ rm geinc_dlink.reg.c
+#$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__   -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=5 -D__CUDACC_VER_BUILD__=119 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=5 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "geinc.cu" -o "geinc.cpp1.ii" 
+#$ cicc --c++17 --gnu_version=110400 --display_error_number --orig_src_file_name "geinc.cu" --orig_src_path_name "/home/geduer/gpucamp/devptx/geinc.cu" --allow_managed  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "geinc.fatbin.c" -tused --gen_module_id_file --module_id_file_name "geinc.module_id" --gen_c_file_name "geinc.cudafe1.c" --stub_file_name "geinc.cudafe1.stub.c" --gen_device_file_name "geinc.cudafe1.gpu"  "geinc.cpp1.ii" -o "geinc.ptx"
+#$ ptxas -arch=sm_52 -m64 "geinc.ptx"  -o "geinc.sm_52.cubin" 
+#$ fatbinary --create="geinc.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=geinc.sm_52.cubin" "--image3=kind=ptx,sm=52,file=geinc.ptx" --embedded-fatbin="geinc.fatbin.c" 
+#$ gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__   -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=5 -D__CUDACC_VER_BUILD__=119 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=5 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "geinc.cu" -o "geinc.cpp4.ii" 
+#$ cudafe++ --c++17 --gnu_version=110400 --display_error_number --orig_src_file_name "geinc.cu" --orig_src_path_name "/home/geduer/gpucamp/devptx/geinc.cu" --allow_managed --m64 --parse_templates --gen_c_file_name "geinc.cudafe1.cpp" --stub_file_name "geinc.cudafe1.stub.c" --module_id_file_name "geinc.module_id" "geinc.cpp4.ii" 
+#$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -m64 "geinc.cudafe1.cpp" -o "geinc.o" 
+#$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__   -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=5 -D__CUDACC_VER_BUILD__=119 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=5 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "gemain.cu" -o "gemain.cpp1.ii" 
+#$ cicc --c++17 --gnu_version=110400 --display_error_number --orig_src_file_name "gemain.cu" --orig_src_path_name "/home/geduer/gpucamp/devptx/gemain.cu" --allow_managed  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "gemain.fatbin.c" -tused --gen_module_id_file --module_id_file_name "gemain.module_id" --gen_c_file_name "gemain.cudafe1.c" --stub_file_name "gemain.cudafe1.stub.c" --gen_device_file_name "gemain.cudafe1.gpu"  "gemain.cpp1.ii" -o "gemain.ptx"
+#$ ptxas -arch=sm_52 -m64 "gemain.ptx"  -o "gemain.sm_52.cubin" 
+#$ fatbinary --create="gemain.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=gemain.sm_52.cubin" "--image3=kind=ptx,sm=52,file=gemain.ptx" --embedded-fatbin="gemain.fatbin.c" 
+#$ gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__   -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=5 -D__CUDACC_VER_BUILD__=119 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=5 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "gemain.cu" -o "gemain.cpp4.ii" 
+#$ cudafe++ --c++17 --gnu_version=110400 --display_error_number --orig_src_file_name "gemain.cu" --orig_src_path_name "/home/geduer/gpucamp/devptx/gemain.cu" --allow_managed --m64 --parse_templates --gen_c_file_name "gemain.cudafe1.cpp" --stub_file_name "gemain.cudafe1.stub.c" --module_id_file_name "gemain.module_id" "gemain.cpp4.ii" 
+#$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -m64 "gemain.cudafe1.cpp" -o "gemain.o" 
+#$ nvlink -m64 --arch=sm_52 --register-link-binaries="geinc_dlink.reg.c"    -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu -cpu-arch=X86_64 "geinc.o" "gemain.o"  -lcudadevrt  -o "geinc_dlink.sm_52.cubin"
+#$ fatbinary --create="geinc_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=geinc_dlink.sm_52.cubin" --embedded-fatbin="geinc_dlink.fatbin.c" 
+#$ gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\"geinc_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"geinc_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__   -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=5 -D__CUDACC_VER_BUILD__=119 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=5 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/usr/lib/nvidia-cuda-toolkit/bin/crt/link.stub" -o "geinc_dlink.o" 
+#$ g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "geinc_dlink.o" "geinc.o" "gemain.o"   -L/usr/lib/x86_64-linux-gnu/stubs -L/usr/lib/x86_64-linux-gnu  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "geinc" 
